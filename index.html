@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>My Virtual World</title>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./Shape Classes/Triangle.js"></script>
+    <script src="./Shape Classes/Cube.js"></script>
+    <script src="./Shape Classes/Octahedron.js"></script>
+    <script src="world.js"></script>
+</head>
+
+<body onload="main()">
+<div id="container">
+    <div id="canvas-container">
+        <canvas id="webgl" width="400" height="400">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <p id="fps"> XXX </p>
+        <label for="size">Camera Angle</label>
+        <input type="range" id="angleSlider" name="size" min="0" max="360" value="0"/>
+        <br>
+        <button id = "Oak">Oak House</button>
+        <br>
+        <button id = "DarkOak">Dark Oak House</button>
+        <br>
+        <button id = "Arcadia">Arcadia House</button>
+        <br><br>
+        <button id = "OakRoof">Oak Roof</button>
+        <br>
+        <button id = "DarkOakRoof">Dark Oak Roof</button>
+        <br>
+        <button id = "ArcadiaRoof">Arcadia Roof</button>
+</div>
+</body>
+</html>
